@@ -4,14 +4,65 @@ cargado el DOM y otra después que las imágenes se hayan cargado.
 Tip: Investigar el evento window.onload
 
 -->
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+            </title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
+            </script>
+            <style>
+                img{
+            		height: 200px;
+            		width: 300px;
+            		float: left;
 
-  </body>
+            	}
+            </style>
+        </meta>
+    </head>
+    <body>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/30"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/500"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/3"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/4"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/8"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/90"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/7"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/80"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/9"/>
+        </div>
+        <div>
+            <img alt="" src="https://picsum.photos/200/300/?random/10"/>
+        </div>
+        <script>
+            $(document).ready(function(){
+
+   alert("DOM cargado");
+
+});
+            $( window ).on( "load", function() { 
+   alert("imagenes cargados")
+
+             })
+        </script>
+    </body>
 </html>
