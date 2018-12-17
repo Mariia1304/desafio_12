@@ -6,14 +6,44 @@ ver: https://stackoverflow.com/questions/22994810/how-do-i-desaturate-and-satura
 Al hacer click sobre la imágen esta debe recuperar su color con una transición
 de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 -->
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                desaturada
+            </title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
+            </script>
+            <style>
+                img.desaturada { filter: grayscale(100%);transition: 0;}
+                img{
+                	transition: 1s;
+                }
+            </style>
+        </meta>
+    </head>
+    <body>
+        <img alt="" class="desaturada" src="https://picsum.photos/600/300/">
+        </img>
+        <img alt="" class="desaturada" src="https://picsum.photos/600/300/">
+        </img>
+        <img alt="" class="desaturada" src="https://picsum.photos/600/300/">
+        </img>
+        <img alt="" class="desaturada" src="https://picsum.photos/600/300/">
+        </img>
+        <img alt="" class="desaturada" src="https://picsum.photos/600/300/">
+        </img>
+        <img alt="" class="desaturada" src="https://picsum.photos/600/300/">
+        </img>
+        <script>
+            $("img").click(function(){
+        	//$(".desaturada").css("filter","grayscale(0%)");
+        //
 
-  </body>
+          
+  $( this ).toggleClass( "desaturada" );
+});
+        </script>
+    </body>
 </html>
